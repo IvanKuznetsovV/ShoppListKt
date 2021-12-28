@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <ImageView
+        android:id="@+id/bin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/ic_baseline_delete_24"/>
+    <ImageView
+        android:id="@+id/recover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:layout_marginStart="7dp"
+        android:src="@drawable/ic_baseline_settings_backup_restore_24"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/TextTheme"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"/>
+
+</LinearLayout>
