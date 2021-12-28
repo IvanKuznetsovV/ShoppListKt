@@ -5,19 +5,16 @@ import android.annotation.SuppressLint
 import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.content.res.Resources
-import android.icu.util.TimeUnit.values
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.core.view.get
 import com.ivankuznetsov.shopplistkt.R
 import com.ivankuznetsov.shopplistkt.databinding.ActivityMainBinding
 import com.ivankuznetsov.shopplistkt.fragment.BinFragment
 import com.ivankuznetsov.shopplistkt.fragment.SettingsFragment
 import com.ivankuznetsov.shopplistkt.fragment.ProductListFragment
-import java.time.chrono.JapaneseEra.values
+
 
 class MainActivity : AppCompatActivity()  {
 

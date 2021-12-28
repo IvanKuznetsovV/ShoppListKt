@@ -27,16 +27,8 @@
     </style>
 
     <style name="Theme.SplashScreen" parent="Theme.Design.NoActionBar">
-        <item name="colorPrimary">@color/white</item>
-        <item name="colorPrimaryVariant">#33FFFFFF</item>
-        <item name="colorAccent">#191818</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorSecondary">@color/black</item>
-        <item name="colorSecondaryVariant">@color/white</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <item name="android:colorBackground">#F4511E</item>
-        <item name="android:toolbarStyle">@style/ToolBarTheme</item>
-        <item name="android:statusBarColor">#33000000</item>
+        <item name="android:windowBackground">@drawable/splash_ic</item>
+
     </style>
 
 
