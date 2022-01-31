@@ -2,6 +2,7 @@ package com.ivankuznetsov.shopplistkt.adapter
 
 import android.app.AlertDialog
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,8 +43,9 @@ class BinListAdapter(val appContext : Context,
             textview?.text = binListArray[index].product_bin_name
 
             imageviewRec?.setOnClickListener(View.OnClickListener {
-                var product = ProductListEntity(0, binListArray[index].product_bin_name)
+                val product = ProductListEntity(0, binListArray[index].product_bin_name)
                 userViewModel = ViewModelProvider(viewOwner)[UserViewModel :: class.java]
+                Log.d("MyLog", product.product_name_id.toString())
                 userViewModel.addProduct(product)
                 userViewModel.deleteBin(binListArray[index])
                 Toast.makeText(appContext,"ВОССТАНОВЛЕНО", Toast.LENGTH_SHORT).show()
